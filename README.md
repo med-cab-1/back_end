@@ -1,6 +1,6 @@
 # Med Cabinet Back-end API Information
 
-# API: https://marijuana-api.herokuapp.com/
+# API: https://med-cab-2020.herokuapp.com
 
 ## REGISTER AND LOGIN
 Type | Endpoint | What it does | Required

@@ -55,6 +55,12 @@ app.use(xss())
 app.use(hpp())
 
 //Routes
+app.get('/', () => {
+    res.status(200).json({
+        api: "Up",
+        message: "Welcome to medcab API"
+    })
+})
 app.use('/api/v1/ailments', ailmentRouter)
 app.use('/api/v1/users', userRouter);
 

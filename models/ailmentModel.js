@@ -5,7 +5,6 @@ const { ObjectID } = require('bson')
 const ailmentSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
     },
     description: {
         type: String,

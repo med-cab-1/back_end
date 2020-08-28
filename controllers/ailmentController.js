@@ -16,8 +16,12 @@ exports.getAllAilments = catchAsync(async (req, res, next) => {
 
 exports.postAilment = async (req, res, next) => {
 
+    const { input_phrase } = req.body
+
+    console.log(input_phrase)
+
     try {
-        let response = await axios.post('https://med-cab-2020.herokuapp.com/predict', { input_phrase: "string of words" })
+        let response = await axios.post('https://med-cab-2020.herokuapp.com/predict', { input_phrase })
         let recommendation = response.data
 
         let newAilment = {

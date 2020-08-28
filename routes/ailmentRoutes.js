@@ -4,8 +4,9 @@ const authController = require('../controllers/authController')
 const router = express.Router();
 
 
-router.
-    route('/')
+router
+    .use(authController.protect)
+    .route('/')
     .get(ailmentController.getAllAilments)
     .post(ailmentController.postAilment)
 

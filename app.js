@@ -55,7 +55,7 @@ app.use(xss())
 app.use(hpp())
 
 //Routes
-app.get('/', () => {
+app.get('/', (req, res) => {
     res.status(200).json({
         api: "Up",
         message: "Welcome to medcab API"
